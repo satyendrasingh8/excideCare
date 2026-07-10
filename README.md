@@ -3,6 +3,18 @@
 Official website for **Hanumat Battery Service**, an Exide battery dealer in
 Tulsi Nagar, Kasahai Road, Karwi, Chitrakoot Dham, Uttar Pradesh 210205.
 
+## About the shop
+
+- **Name:** Hanumat Battery Service
+- **Owner:** Ajad Singh
+- **Address:** Tulsi Nagar, Kasahai Road, Karwi, Chitrakoot Dham, Uttar Pradesh 210205
+- **Hours:** Open all days, 8:00 AM – 10:00 PM
+- **Phone:** 9532048072 (primary), 8851904799 (alternate)
+- **Brands:** Exide, Luminous, Microtek, Livguard, Amaron
+- **What they sell/do:** Car, bike, e-rickshaw, tractor, inverter, solar, UPS
+  and commercial vehicle batteries, plus battery charging/testing, old
+  battery exchange, and free home delivery & fitting.
+
 SEO-optimized with
 per-page metadata, a `LocalBusiness` JSON-LD schema, an auto-generated
 sitemap/robots file, and a mobile-first layout with always-visible Call and

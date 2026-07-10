@@ -15,24 +15,24 @@ export default function Breadcrumbs({ trail }) {
   };
 
   return (
-    <nav aria-label="Breadcrumb" className="text-sm text-neutral-500">
+    <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ol className="flex flex-wrap items-center gap-1.5">
         <li>
-          <Link href="/" className="hover:text-red-600">
+          <Link href="/" className="hover:text-blue-600">
             Home
           </Link>
         </li>
         {trail.map((item, index) => (
           <li key={item.label} className="flex items-center gap-1.5">
-            <span>/</span>
+            <span className="text-slate-300">/</span>
             {index === trail.length - 1 || !item.href ? (
-              <span className="text-neutral-700">{item.label}</span>
+              <span className="text-slate-700">{item.label}</span>
             ) : (
-              <Link href={item.href} className="hover:text-red-600">
+              <Link href={item.href} className="hover:text-blue-600">
                 {item.label}
               </Link>
             )}

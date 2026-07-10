@@ -3,12 +3,12 @@ export default function VehicleModelBadges({ label, models }) {
 
   return (
     <div>
-      {label && <p className="font-semibold text-neutral-900">{label}</p>}
+      {label && <p className="font-semibold text-slate-900">{label}</p>}
       <div className="mt-3 flex flex-wrap gap-2">
         {models.map((model) => (
           <span
             key={model}
-            className="rounded-full bg-neutral-100 border border-neutral-200 px-3.5 py-1.5 text-sm text-neutral-700"
+            className="rounded-full bg-slate-100 border border-slate-200 px-3.5 py-1.5 text-sm text-slate-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors"
           >
             {model}
           </span>
