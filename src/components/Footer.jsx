@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Icon from "./Icon";
 import { site } from "@/content/site";
+import { categoryPages } from "@/content/categoryPages";
 import { telHref, whatsappHref } from "@/lib/links";
 
 export default function Footer() {
@@ -81,6 +82,21 @@ export default function Footer() {
             Get Directions
             <Icon name="arrowRight" className="w-4 h-4" />
           </a>
+        </div>
+      </div>
+
+      <div className="border-t border-neutral-800">
+        <div className="mx-auto max-w-6xl px-4 py-8">
+          <h3 className="text-white font-bold mb-3 text-sm">Popular Battery Searches</h3>
+          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {categoryPages.map((page) => (
+              <li key={page.slug}>
+                <Link href={`/${page.slug}`} className="hover:text-red-400 transition-colors">
+                  {page.kicker}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

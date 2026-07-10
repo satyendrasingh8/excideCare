@@ -3,16 +3,10 @@
 Official website for **Hanumat Battery Service**, an Exide battery dealer in
 Tulsi Nagar, Kasahai Road, Karwi, Chitrakoot Dham, Uttar Pradesh 210205.
 
-Built with Next.js (App Router), React and Tailwind CSS. SEO-optimized with
+SEO-optimized with
 per-page metadata, a `LocalBusiness` JSON-LD schema, an auto-generated
 sitemap/robots file, and a mobile-first layout with always-visible Call and
 WhatsApp buttons.
-
-## Editing content (no coding needed for most changes)
-
-Almost everything on the site — business name, phone numbers, address,
-opening hours, services, trust points and gallery photos — lives in **one
-file**:
 
 ```
 src/content/site.js
@@ -34,6 +28,23 @@ top of `src/content/site.js`.
 
 ### Changing services, hours, or address
 Edit the `services`, `hoursDisplay`, or `address` fields in the same file.
+
+### The SEO landing pages (car, bike, inverter, tractor, etc.)
+
+Beyond the main pages, the site has 10 extra pages built for local search —
+each targets a specific battery type and shows up at its own URL, e.g.
+`/car-battery-chitrakoot`, `/inverter-battery-chitrakoot`,
+`/battery-home-delivery-chitrakoot`. All of their text (headline, intro,
+vehicle models, FAQs) lives in one file:
+
+```
+src/content/categoryPages.js
+```
+
+Find the page by its `slug` and edit any field. To add a brand-new page,
+copy one whole `{ ... }` entry, give it a new unique `slug`, and it appears
+automatically in the sitemap, the footer links, and the `/services` page —
+no other file needs to change.
 
 ## Local development
 

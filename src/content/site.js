@@ -16,9 +16,12 @@ export const site = {
   businessName: "Hanumat Battery Service",
   shortName: "Hanumat Battery",
   ownerName: "Ajad Singh",
-  tagline: "Genuine Exide & Luminous Batteries in Karwi, Chitrakoot Dham",
+  tagline: "Your Trusted Battery Shop in Karwi & Chitrakoot Dham",
   description:
-    "Hanumat Battery Service is a trusted Exide battery dealer in Karwi, Chitrakoot Dham, Uttar Pradesh, offering car, bike, inverter, solar and commercial vehicle batteries with free installation, battery charging and old-battery exchange.",
+    "Need a battery? Hanumat Battery Service in Karwi, Chitrakoot Dham sells genuine Exide, Luminous, Microtek, Livguard and Amaron batteries for cars, bikes, inverters, solar, tractors and more. Free fitting, fast doorstep delivery, and a fair price for your old battery.",
+
+  // Brands stocked, in order of emphasis — Exide is our primary/flagship brand.
+  brands: ["Exide", "Luminous", "Microtek", "Livguard", "Amaron"],
 
   // Public URL of the deployed site — update this after your first Vercel deploy
   // (e.g. "https://hanumatbattery.vercel.app") so SEO tags & sitemap are correct.
@@ -51,82 +54,96 @@ export const site = {
     "https://www.google.com/maps?q=25.222318,80.9282516&hl=en&z=16&output=embed",
 
   // ---- Hours -----------------------------------------------------------
-  hoursDisplay: "Open All Days • 8:00 AM – 9:00 PM",
-  hoursSchema: ["Mo-Su 08:00-21:00"], // used in JSON-LD structured data
+  hoursDisplay: "Open All Days • 8:00 AM – 10:00 PM",
+  hoursSchema: ["Mo-Su 08:00-22:00"], // used in JSON-LD structured data
 
   // ---- Services ----------------------------------------------------------
+  // `href` (optional) links the card to its dedicated SEO landing page.
   services: [
     {
       title: "Car & SUV Batteries",
-      description:
-        "Genuine Exide car batteries for all makes and models, fitted for free on the spot.",
+      description: "Exide & Amaron car batteries for any car. We fit it on the spot, free.",
       icon: "car",
+      href: "/car-battery-chitrakoot",
     },
     {
       title: "Bike & Two-Wheeler Batteries",
-      description:
-        "Long-life Exide bike batteries with instant fitting for scooters and motorcycles.",
+      description: "Strong, long-life batteries for your bike or scooter. Fitted in minutes.",
       icon: "bike",
+      href: "/bike-battery-chitrakoot",
+    },
+    {
+      title: "E-Rickshaw & Auto Batteries",
+      description: "Tough batteries built for e-rickshaws that run all day, every day.",
+      icon: "truck",
+      href: "/e-rickshaw-battery-chitrakoot",
+    },
+    {
+      title: "Tractor & Farm Batteries",
+      description: "Strong starting power for Mahindra, Swaraj, John Deere & Eicher tractors.",
+      icon: "truck",
+      href: "/tractor-battery-chitrakoot",
     },
     {
       title: "Inverter Batteries",
-      description:
-        "Exide & Luminous inverter batteries for uninterrupted home and shop power backup.",
+      description: "Exide, Luminous, Microtek & Livguard — never sit in the dark during a power cut.",
       icon: "bolt",
-    },
-    {
-      title: "Commercial & Three-Wheeler Batteries",
-      description:
-        "Heavy-duty batteries for trucks, tractors, e-rickshaws and three-wheelers.",
-      icon: "truck",
+      href: "/inverter-battery-chitrakoot",
     },
     {
       title: "Solar Batteries & Panels",
-      description:
-        "Solar battery solutions for homes and shops looking to cut electricity bills.",
+      description: "Cut your electricity bill with a solar battery from Exide or Luminous.",
       icon: "sun",
+      href: "/solar-battery-chitrakoot",
     },
     {
-      title: "Battery Charging Service",
-      description:
-        "Quick battery charging and testing service for all battery types.",
+      title: "UPS & Computer Backup Batteries",
+      description: "Keep your computer and shop billing running through every power cut.",
       icon: "charge",
+      href: "/ups-battery-chitrakoot",
+    },
+    {
+      title: "Truck, Bus & Commercial Vehicle Batteries",
+      description: "Heavy-duty batteries for trucks, buses, tempos and generators.",
+      icon: "truck",
+      href: "/exide-battery-dealer-chitrakoot",
+    },
+    {
+      title: "Battery Charging & Testing",
+      description: "Not sure if your battery is dead or just needs a charge? We'll check it free.",
+      icon: "charge",
+      href: "/battery-replacement-chitrakoot",
     },
     {
       title: "Old Battery Exchange",
-      description:
-        "Get the best exchange value on your old battery against a new one.",
+      description: "Hand over your old battery and get a good price against a new one.",
       icon: "exchange",
     },
     {
       title: "Free Home Delivery & Fitting",
-      description:
-        "Order by phone or WhatsApp — we deliver and fit your battery at your doorstep in Karwi & Chitrakoot.",
+      description: "Just call or WhatsApp us — we'll bring the battery to your door and fit it.",
       icon: "delivery",
+      href: "/battery-home-delivery-chitrakoot",
     },
   ],
 
   // ---- Trust points (replaces fake testimonials) --------------------------
   trustPoints: [
     {
-      title: "100% Genuine Exide Products",
-      description:
-        "We are a genuine battery dealer — every battery comes with full manufacturer warranty.",
+      title: "100% Genuine Batteries",
+      description: "No local duplicates, ever. Every battery comes with full company warranty.",
     },
     {
       title: "Free Fitting & Doorstep Delivery",
-      description:
-        "Call or WhatsApp us and we'll deliver and install your new battery in Karwi & Chitrakoot Dham.",
+      description: "Just call or WhatsApp — we'll bring it home and fit it for you, free.",
     },
     {
       title: "Best Exchange Value",
-      description:
-        "Get a fair price for your old battery when you upgrade to a new one.",
+      description: "Bring your old battery, get a good price against your new one.",
     },
     {
       title: "All Vehicles, All Brands",
-      description:
-        "Car, bike, truck, tractor, inverter, solar — we stock batteries for every need.",
+      description: "Exide, Luminous, Microtek, Livguard, Amaron — one shop for every battery need.",
     },
   ],
 
@@ -175,16 +192,33 @@ export const site = {
 
   keywords: [
     "Exide battery dealer Chitrakoot",
+    "Exide battery shop Chitrakoot",
+    "genuine Exide battery",
+    "battery shop near me",
+    "battery dealer near me",
     "battery shop Karwi",
+    "battery dealer Chitrakoot Dham",
     "Hanumat Battery Service",
     "car battery Karwi Chitrakoot",
+    "car battery replacement Chitrakoot",
     "bike battery shop Chitrakoot Dham",
+    "two wheeler battery Karwi",
+    "e-rickshaw battery Chitrakoot",
+    "tractor battery Chitrakoot",
     "inverter battery dealer Karwi",
     "Luminous battery Chitrakoot",
+    "Microtek battery dealer Chitrakoot",
+    "Livguard battery dealer Karwi",
+    "Amaron battery dealer Chitrakoot",
     "solar battery Karwi",
+    "UPS battery dealer Chitrakoot",
     "battery charging service Chitrakoot",
+    "battery home delivery Chitrakoot",
     "old battery exchange Karwi",
     "battery shop near Kasahai road",
     "battery shop Tulsi Nagar Karwi",
+    "battery shop near Chitrakoot Dham railway station",
+    "एक्साइड बैटरी चित्रकूट",
+    "बैटरी की दुकान चित्रकूट",
   ],
 };

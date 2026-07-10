@@ -25,23 +25,9 @@ export default function LocalBusinessJsonLd() {
       longitude: site.geo.lng,
     },
     hasMap: site.directionsUrl,
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "08:00",
-        closes: "21:00",
-      },
-    ],
+    openingHours: site.hoursSchema,
     areaServed: ["Karwi", "Chitrakoot Dham", "Chitrakoot"],
+    brand: site.brands?.map((name) => ({ "@type": "Brand", name })),
     founder: {
       "@type": "Person",
       name: site.ownerName,

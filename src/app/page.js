@@ -10,7 +10,7 @@ import { site } from "@/content/site";
 import { telHref, whatsappHref } from "@/lib/links";
 
 export const metadata = {
-  title: `${site.businessName} — Exide Battery Shop in Karwi, Chitrakoot Dham`,
+  title: `${site.businessName} — Exide, Luminous & Amaron Battery Shop in Karwi, Chitrakoot Dham`,
   description: site.description,
   alternates: { canonical: "/" },
 };
@@ -33,15 +33,18 @@ export default function HomePage() {
 
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:py-24">
           <p className="inline-flex items-center gap-2 rounded-full bg-red-600/15 border border-red-600/30 px-4 py-1.5 text-sm font-semibold text-red-400">
-            Trusted Exide Dealer • Karwi, Chitrakoot Dham
+            Trusted Battery Dealer • Karwi, Chitrakoot Dham
           </p>
           <h1 className="mt-5 text-3xl sm:text-5xl font-extrabold text-white leading-tight max-w-2xl">
-            {site.businessName} — Genuine Exide &amp; Luminous Batteries, Delivered &amp; Fitted Free
+            {site.businessName} — Genuine Exide, Luminous &amp; Amaron Batteries, Delivered &amp; Fitted Free
           </h1>
+          <p className="mt-3 text-red-300 font-medium">
+            Genuine parts. Fair prices. Fast doorstep service.
+          </p>
           <p className="mt-5 text-lg text-neutral-300 max-w-xl">
             Car, bike, inverter, solar and commercial vehicle batteries for every home and business
-            in Karwi &amp; Chitrakoot Dham. Call us or message on WhatsApp — we deliver and fit at
-            your doorstep the same day.
+            in Karwi &amp; Chitrakoot Dham. We stock Exide, Luminous, Microtek, Livguard and Amaron.
+            Call us or message on WhatsApp — we deliver and fit at your doorstep the same day.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -66,7 +69,7 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-neutral-300">
             <span className="flex items-center gap-2">
               <Icon name="check" className="w-4 h-4 text-green-500" />
-              100% Genuine Exide Products
+              100% Genuine Batteries, All Brands
             </span>
             <span className="flex items-center gap-2">
               <Icon name="check" className="w-4 h-4 text-green-500" />
@@ -88,7 +91,7 @@ export default function HomePage() {
           </h2>
           <p className="mt-3 text-neutral-600">
             Whatever you drive or power, Hanumat Battery Service in Tulsi Nagar, Kasahai Road has a
-            genuine Exide or Luminous battery for it.
+            genuine battery for it — Exide, Luminous, Microtek, Livguard or Amaron.
           </p>
         </div>
         <div className="mt-8">
